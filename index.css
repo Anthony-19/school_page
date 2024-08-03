@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Inter:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+html {
+    font-size: 18px;
+    color: black;
+}
+.container{
+   display: flex;
+   align-items: center; 
+   justify-content: center; 
+   flex-wrap: wrap;
+   flex-direction: column;
+   min-height: 100vh; 
+}
+ .container-1{
+    width: 100%;
+    max-width: 100%;
+    padding: 1.95rem 9.53rem 3rem 9.53rem;
+    position: relative;
+} 
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hamburger-menu{
+    display: none;
+    filter: invert(100%);
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: 1rem;
+}
+.close-icon{
+    display: none;
+    filter: invert(100%);
+    width: 3rem;
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+
+nav .navbar-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    max-width: 20vw;
+}
+.navbar-menu li{
+    font-weight: bold;
+    font-size: 0.7rem;
+    color: white;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    margin: 7rem 0 0rem 0;
+    width: 100%;
+}
+h1{
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+}
+.expressions{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 30vw;
+    margin: 0 auto;
+}
+.expressions p{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.register-free {
+  display: flex;
+  background-color: #C271FF;
+  color: white;
+  border-radius: 1.2rem;
+  border: none;
+  font-weight:bolder;
+  font-size: 0.7rem;
+  padding: 0.72rem 1.1rem;
+  box-shadow: 1px 1px 6px black;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+.pros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+span{
+    color: #C271FF;
+    font-weight: bold;
+}
+h2 {
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+h3{
+    font-size: 0.9rem;
+}
+p{
+    font-size: 0.7rem;
+    font-weight: lighter;
+}
+.pros-list img{
+    width: 100%;
+    max-width: 100px;
+}
+.pros-list{
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card p,h2,h3{
+    text-align: center;
+}
+.container-2{
+    width: 100%;
+    max-width: 100%;
+    background-color: #C271FF;
+    padding: 4rem 9.53rem;
+    color: white;
+}
+.testimonials .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    flex-direction: row;
+    gap: 2rem;
+}
+.testimonials img{
+    width: 100%;
+    max-width: 100px;
+}
+.testimonials p,h3{
+    text-align: start;
+}
+.testimonials p{
+    width: 100%;
+    max-width: 75%;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+.testimonials h3{
+    padding: 1rem 0 0 0;
+}
+.container-3{
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 9.53rem 3rem 9.53rem;
+}
+.tutorial-videos{
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+    margin-top: 2rem;
+}
+.tutorial-videos article .preview{
+    width: 100%;
+    max-width: 180px;
+}
+.tutorial-videos .card{
+    width: 100%;
+    max-width: 180px;
+    position: relative;
+}
+.phillip-massey{
+    width: 100%;
+    max-width: 15%;
+}
+.play {
+    width: 100%;
+    max-width: 20%;
+    position: absolute;
+    bottom: 65%;
+    transform: translateY(-50%);
+}
+.tutorial-videos h3{
+    font-size: 0.76rem;
+}
+
+.tutorial-videos .card-body{
+    padding: 0.5rem 0 0 0.3rem;
+}
+.tutorial-videos .card-body p{
+  text-align: start;
+  font-size: 0.65rem;
+
+}
+.tutorial-videos .card-body .card-text{
+    padding-top: 0.3rem;
+}
+.tutorial-videos .review{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.tutorial-videos .review .tutor{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.6rem;
+    margin: 0.5rem 0 0.2rem 0;
+}
+.tutorial-videos .time{
+   display: block;
+}
+
+.rating {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.tutor p,
+.time{
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.container-4{
+    width: 100%;
+    max-width: 100%;
+    background-color: #071629;
+    color: white;
+}
+.free-membership{
+    padding: 3rem 9.53rem;
+}
+.btn{
+    margin: 0 auto;
+    font-weight: 600;
+    box-shadow: 1px 1px 2px white;
+}
+.membership-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0 3.5rem 0;
+}
+.membership-list .card{
+    width: 100%;
+    max-width: 20%;
+}
+.smile {
+    width: 100%;
+    max-width: 2rem;
+}
+.membership-list .card-title{
+    padding: 0.8rem 0;    
+}
+.faq{
+    padding: 3rem 9.53rem;
+}
+.faq h2{
+    font-size: 3rem;
+    font-weight: 300;
+}
+.frequently-ask{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+    column-gap: 9rem;
+    margin-top: 2rem;
+}
+.frequently-ask article{
+    width: 100%;
+    max-width: 80%;
+}
+.frequently-ask h3{
+    padding-bottom: 1rem;
+}
+
+footer{
+    width: 100%;
+    max-width: 100%;
+    background-color: #071629;
+    padding: 3rem 9.53rem  0.5rem 9.53rem ;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+footer p{
+    text-align: center;
+    color: #FFFFFF;
+}
+.social-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.social-icon img{
+    width: 100%;
+    max-width: 10%;
+}
+
+
+
+@media screen and (max-width: 1273px){
+    .faq{
+        padding: 3rem 9.53rem;
+    }
+    .frequently-ask{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 6rem;
+        column-gap: 9rem;
+        margin-top: 2rem;
+    
+    }
+    .frequently-ask article{
+        width: 100%;
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 1083px) {
+  
+    .tutorial-videos article .preview{
+        width: 100%;
+        max-width: 150px;
+    }
+    .tutorial-videos .card{
+        width: 100%;
+        max-width: 150px;
+        position: relative;
+    }
+    .container-1{
+        padding:  3rem 4.53rem  3rem 4.53rem ;
+    }
+    .container-2{
+        padding:  3rem 4.53rem  3rem 4.53rem ;
+    }
+    .container-3{
+        padding:  3rem 4.53rem  3rem 4.53rem ;
+    }
+    .container-5{
+        padding:  3rem 4.53rem  3rem 4.53rem ;
+
+    }
+    footer{
+        padding:  3rem 4.53rem  3rem 4.53rem ;
+    }
+    .free-membership{
+        padding: 3rem 4.53rem;
+    }
+    .btn{
+        margin: 0 auto;
+        font-weight: 600;
+        box-shadow: 1px 1px 2px white;
+    }
+    .membership-list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 3rem 0 3.5rem 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    .membership-list .card{
+        width: 100%;
+        max-width: 20%;
+    }
+    .smile {
+        width: 100%;
+        max-width: 2rem;
+    }
+    .membership-list .card-title{
+        padding: 0.8rem 0;    
+    }
+    .faq{
+        padding: 3rem 4.53rem;
+    }
+    .frequently-ask{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+        column-gap: 9rem;
+        margin-top: 2rem;
+    
+    }
+    .frequently-ask article{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .faq{
+        padding: 3rem 4.53rem;
+    }
+    .frequently-ask{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4rem;
+        column-gap: 4rem;
+        margin-top: 2rem;
+    
+    }
+    .frequently-ask article{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 958px){
+    .faq{
+        padding: 3rem 1.53rem;
+    }
+    .frequently-ask{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4rem;
+        column-gap: 2rem;
+        margin-top: 2rem;
+    
+    }
+}
+@media screen and (max-width: 715px){
+    .navbar ul{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+        background-color: black !important;
+        width: 100% !important;
+        max-width: 50% !important;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        z-index: 100;
+        transition: all 0.9s ease-in-out;
+    }
+    .navbar li{
+        padding: 2rem;
+    }
+    .navbar ul.active{
+        display: flex;
+        right: 0;
+    }
+    .hamburger-menu{
+        transition: all 0.9s ease-in-out;
+        display: block;
+        z-index: 100;
+    }
+    .hamburger-menu.active{
+        display: none;
+    }
+    .close-icon{
+        display: none;
+        position: fixed;
+        z-index: 120;
+        transition: all 0.9s ease-in-out;
+    }
+    .close-icon.active{
+        display: block;
+    }
+}
+@media screen and (max-width: 778px){
+    .container-1{
+        padding:  3rem 1rem  3rem 1rem ;
+    }
+    .container-2{
+        padding:  3rem 1rem  3rem 1rem ;
+    }
+    .container-3{
+        padding:  3rem 1rem  3rem 1rem ;
+    }
+    .container-5{
+        padding:  3rem 1rem  3rem 1.53rem ;
+
+    }
+    footer{
+        padding:  3rem 1rem  3rem 1rem ;
+    }
+    .free-membership{
+        padding: 3rem 1rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .tutorial-videos article .preview{
+        width: 100%;
+        max-width: 140px;
+    }
+    .tutorial-videos .card{
+        width: 100%;
+        max-width: 140px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .tutorial-videos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 571px){
+    h1{
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+    }
+    .pros-list{
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-between;
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+    .membership-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 3rem 0 3.5rem 0;
+        row-gap: 2rem;
+    }
+    .membership-list .card{
+        width: 100%;
+        max-width: 100%;
+    }
+    .frequently-ask{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 4rem;
+        column-gap: 9rem;
+        margin-top: 2rem;
+    }
+    .frequently-ask article{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 477px){
+    h1{
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        line-height: 70px;
+    }
+    .expressions{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 40vw;
+        margin: 0 auto;
+    }
+    .expressions p{
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+    .pros-list{
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: space-between;
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+    .tutorial-videos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar li{
+        padding: 1rem;
+    }
+    footer .navbar-logo{
+        width: 100%;
+        max-width: 30%;
+    }
+    .social-icon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        gap: 1rem;
+    }
+    .social-icon img{
+        width: 100%;
+        max-width: 8%;
+    }
+    small{
+        font-size: 0.3rem;
+    }
+}
+
